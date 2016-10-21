@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<style type="text/css">
+    div{
+        text-align: center;
+    }
+</style>
+<body>
+
+    <div>
+        <!-- Main Image -->
+        <div style="overflow: hidden;">
+            <img id="viewer" src="http://goo.gl/Cdfnd" />
+        </div>
+        
+        <!-- Image was click to change in Main -->
+        <img class="thumbnail" src="http://goo.gl/Cdfnd" onclick="ChangeImage('http://goo.gl/Cdfnd');" />
+        <img class="thumbnail" src="http://goo.gl/VmUjM" onclick="ChangeImage('http://goo.gl/VmUjM');" />
+
+    </div>
+    <script type="text/javascript">
+        function ChangeImage(change) {
+            document.getElementById("viewer").src = change;
+        }
+  </script>
+</body>
+</html>
