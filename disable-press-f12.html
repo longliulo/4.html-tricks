@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).keydown(function(event){
+    	if(event.keyCode==123 ){
+    		return false;
+   		}
+   		else if(event.ctrlKey && event.shiftKey && event.keyCode==73){        
+      		return false;  //Prevent from ctrl+shift+i
+   		}
+	});
+	</script>
+</head>
+<body>
+<h1>Disable Press F12</h1>
+</body>
+</html>
